@@ -5,7 +5,7 @@ WORKDIR /code
 CMD "hsd"
 
 RUN apk upgrade --no-cache && \
-    apk add --no-cache bash unbound-dev
+    apk add --no-cache bash unbound-dev git
 
 COPY package.json \
      #package-lock.json \
